@@ -1,0 +1,56 @@
+# See https://git-scm.com/docs/gitignore for more about ignoring files.
+
+# IDE
+/.idea/
+
+# Git
+/.git/
+
+# Dependencies
+node_modules/
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+.yarn-integrity
+
+# Logs
+logs/
+*.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+test-results/
+playwright-report/
+/playwright/.cache/
+
+# Outputs
+build/
+
+# Next.js
+/.next/
+out/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Development tools
+.eslintcache
+storybook-static/
+
+# Generated development public assets
+/public/mockServiceWorker.js
+
+# Local env files
+.env*.local
+
+# Misc
+.DS_Store
+*.pem
+.vercel

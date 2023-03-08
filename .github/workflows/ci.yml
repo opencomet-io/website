@@ -1,0 +1,102 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+env:
+  NEXT_TELEMETRY_DISABLED: 1
+
+jobs:
+  lint:
+    name: Lint
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'yarn'
+      - name: Install dependencies
+        run: yarn install --immutable
+      - name: Run ESLint
+        run: yarn run lint
+
+  type-check:
+    name: Type check
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'yarn'
+      - name: Install dependencies
+        run: yarn install --immutable
+      - name: Run type check
+        run: yarn run type-check
+
+  test:
+    name: Test
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'yarn'
+      - name: Install dependencies
+        run: yarn install --immutable
+      - name: Run tests
+        run: yarn run test
+
+  e2e-test:
+    name: E2E Test
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'yarn'
+
+      - name: Install dependencies
+        run: yarn install --immutable
+
+      - name: Get Playwright Version
+        id: playwright-version
+        run: |
+          echo "PLAYWRIGHT_VERSION=$(yarn info @playwright/test --json | jq --raw-output '.children.Version')" >> "$GITHUB_OUTPUT"
+
+      - name: Cache Playwright Browsers
+        id: playwright-cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-${{ steps.playwright-version.outputs.PLAYWRIGHT_VERSION }}
+          restore-keys: |
+            ${{ runner.os }}-playwright-
+
+      - name: Install Playwright Browsers with dependencies
+        if: ${{ steps.playwright-cache.outputs.cache-hit != 'true' }}
+        run: yarn playwright install --with-deps
+
+      - name: Install Playwright system dependencies
+        if: ${{ steps.playwright-cache.outputs.cache-hit == 'true' }}
+        run: yarn playwright install-deps
+
+      - name: Run Playwright tests
+        run: yarn playwright test
+
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30

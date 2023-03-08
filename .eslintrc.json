@@ -1,0 +1,43 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:storybook/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "no-useless-rename": ["error"],
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": [
+          {
+            "group": ["../*"],
+            "message": "Usage of relative parent imports is not allowed."
+          }
+        ]
+      }
+    ],
+    "import/newline-after-import": ["error"],
+    "import/no-useless-path-segments": [
+      "error",
+      {
+        "noUselessIndex": true
+      }
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          ["builtin", "external"],
+          "type",
+          "internal",
+          ["parent", "sibling", "index"],
+          "object"
+        ],
+        "newlines-between": "always",
+        "warnOnUnassignedImports": true
+      }
+    ],
+    "import/no-anonymous-default-export": ["off"]
+  }
+}
