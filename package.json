@@ -1,12 +1,12 @@
 {
-  "name": "web-template",
+  "name": "@opencomet/website",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.1.0",
   "license": "MPL-2.0",
-  "homepage": "https://github.com/opencomet-io/web-template",
+  "homepage": "https://opencomet.io",
   "repository": {
     "type": "git",
-    "url": "https://github.com/opencomet-io/web-template"
+    "url": "https://github.com/opencomet-io/website"
   },
   "author": {
     "name": "Igor Michalak",

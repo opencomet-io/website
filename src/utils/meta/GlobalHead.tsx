@@ -16,7 +16,6 @@ const GlobalHead: FC = () => {
         content="width=device-width, initial-scale=1, minimum-scale=0.3, maximum-scale=5"
       />
       <meta name="referrer" content="same-origin" />
-      <link rel="manifest" href="/manifest.json" />
       <link rel="icon" href="/favicon.ico" />
       <link rel="shortcut icon" href="/favicon.ico" />
 

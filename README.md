@@ -1,10 +1,6 @@
-# OpenComet's Web Template
+# OpenComet's Website
 
-This is a [Next.js](https://nextjs.org/) based web template.
-
-## Getting Started
-
-Documentation coming soon...
+Built using Next.js.
 
 ## License
 

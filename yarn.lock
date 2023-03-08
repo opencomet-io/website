@@ -2483,6 +2483,87 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@opencomet/website@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@opencomet/website@workspace:."
+  dependencies:
+    "@babel/core": ^7.20.12
+    "@builder.io/partytown": ^0.7.5
+    "@faker-js/faker": ^7.6.0
+    "@mantine/hooks": ^5.10.3
+    "@mdx-js/react": ^1.6.22
+    "@next/env": ^13.2.3
+    "@next/font": 13.1.6
+    "@playwright/test": ^1.31.0
+    "@prettier/plugin-xml": ^2.2.0
+    "@storybook/addon-a11y": ^6.5.16
+    "@storybook/addon-actions": ^6.5.16
+    "@storybook/addon-docs": ^6.5.16
+    "@storybook/addon-essentials": ^6.5.16
+    "@storybook/addon-interactions": ^6.5.16
+    "@storybook/addon-links": ^6.5.16
+    "@storybook/addons": ^6.5.16
+    "@storybook/builder-webpack5": ^6.5.16
+    "@storybook/manager-webpack5": ^6.5.16
+    "@storybook/react": ^6.5.16
+    "@storybook/testing-library": ^0.0.13
+    "@storybook/theming": ^6.5.16
+    "@svgr/webpack": ^6.5.1
+    "@testing-library/dom": ^9.0.0
+    "@testing-library/jest-dom": ^5.16.5
+    "@testing-library/react": ^13.4.0
+    "@testing-library/user-event": ^14.4.3
+    "@types/babel__core": ^7
+    "@types/node": 18.13.0
+    "@types/react": 18.0.27
+    "@types/react-dom": 18.0.10
+    "@types/styled-components": ^5
+    "@types/ua-parser-js": ^0.7.36
+    "@vitejs/plugin-react": ^3.1.0
+    "@vitest/coverage-c8": ^0.28.4
+    "@vitest/ui": ^0.28.4
+    babel-loader: ^8.3.0
+    babel-plugin-styled-components: ^2.0.7
+    dotenv: ^16.0.3
+    downshift: ^7.2.0
+    eslint: ^8.34.0
+    eslint-config-next: 13.1.6
+    eslint-config-prettier: ^8.6.0
+    eslint-plugin-prettier: ^4.2.1
+    eslint-plugin-storybook: ^0.6.11
+    framer-motion: ^9.0.2
+    happy-dom: ^8.9.0
+    husky: ^8.0.3
+    i18next: ^22.4.9
+    immer: ^9.0.19
+    lint-staged: ^13.1.2
+    msw: ^1.0.1
+    next: 13.1.6
+    next-i18next: ^13.1.5
+    next-pwa: ^5.6.0
+    next-seo: ^5.15.0
+    next-sitemap: ^3.1.52
+    prettier: ^2.8.4
+    react: 18.2.0
+    react-dom: 18.2.0
+    react-hook-form: ^7.43.1
+    react-i18next: ^12.1.5
+    react-is: ^18.2.0
+    serve: ^14.2.0
+    sharp: ^0.31.3
+    storybook-addon-next: ^1.7.1
+    styled-components: ^5.3.6
+    svgo: ^3.0.2
+    tslib: ^2.5.0
+    typescript: 4.9.5
+    ua-parser-js: ^1.0.33
+    vite-tsconfig-paths: ^4.0.5
+    vitest: ^0.28.4
+    wretch: ^2.4.1
+    zustand: ^4.3.3
+  languageName: unknown
+  linkType: soft
+
 "@pkgr/utils@npm:^2.3.1":
   version: 2.3.1
   resolution: "@pkgr/utils@npm:2.3.1"
@@ -18450,87 +18531,6 @@ __metadata:
   checksum: 5149842ccbfbc56fe4f8758957b3f8c8616a281874a5bb84aa1b305e4436a9bad853d21c629a7b8f174902449e1489c7a6c724fccf60965077c5636bd8aed42b
   languageName: node
   linkType: hard
-
-"web-template@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "web-template@workspace:."
-  dependencies:
-    "@babel/core": ^7.20.12
-    "@builder.io/partytown": ^0.7.5
-    "@faker-js/faker": ^7.6.0
-    "@mantine/hooks": ^5.10.3
-    "@mdx-js/react": ^1.6.22
-    "@next/env": ^13.2.3
-    "@next/font": 13.1.6
-    "@playwright/test": ^1.31.0
-    "@prettier/plugin-xml": ^2.2.0
-    "@storybook/addon-a11y": ^6.5.16
-    "@storybook/addon-actions": ^6.5.16
-    "@storybook/addon-docs": ^6.5.16
-    "@storybook/addon-essentials": ^6.5.16
-    "@storybook/addon-interactions": ^6.5.16
-    "@storybook/addon-links": ^6.5.16
-    "@storybook/addons": ^6.5.16
-    "@storybook/builder-webpack5": ^6.5.16
-    "@storybook/manager-webpack5": ^6.5.16
-    "@storybook/react": ^6.5.16
-    "@storybook/testing-library": ^0.0.13
-    "@storybook/theming": ^6.5.16
-    "@svgr/webpack": ^6.5.1
-    "@testing-library/dom": ^9.0.0
-    "@testing-library/jest-dom": ^5.16.5
-    "@testing-library/react": ^13.4.0
-    "@testing-library/user-event": ^14.4.3
-    "@types/babel__core": ^7
-    "@types/node": 18.13.0
-    "@types/react": 18.0.27
-    "@types/react-dom": 18.0.10
-    "@types/styled-components": ^5
-    "@types/ua-parser-js": ^0.7.36
-    "@vitejs/plugin-react": ^3.1.0
-    "@vitest/coverage-c8": ^0.28.4
-    "@vitest/ui": ^0.28.4
-    babel-loader: ^8.3.0
-    babel-plugin-styled-components: ^2.0.7
-    dotenv: ^16.0.3
-    downshift: ^7.2.0
-    eslint: ^8.34.0
-    eslint-config-next: 13.1.6
-    eslint-config-prettier: ^8.6.0
-    eslint-plugin-prettier: ^4.2.1
-    eslint-plugin-storybook: ^0.6.11
-    framer-motion: ^9.0.2
-    happy-dom: ^8.9.0
-    husky: ^8.0.3
-    i18next: ^22.4.9
-    immer: ^9.0.19
-    lint-staged: ^13.1.2
-    msw: ^1.0.1
-    next: 13.1.6
-    next-i18next: ^13.1.5
-    next-pwa: ^5.6.0
-    next-seo: ^5.15.0
-    next-sitemap: ^3.1.52
-    prettier: ^2.8.4
-    react: 18.2.0
-    react-dom: 18.2.0
-    react-hook-form: ^7.43.1
-    react-i18next: ^12.1.5
-    react-is: ^18.2.0
-    serve: ^14.2.0
-    sharp: ^0.31.3
-    storybook-addon-next: ^1.7.1
-    styled-components: ^5.3.6
-    svgo: ^3.0.2
-    tslib: ^2.5.0
-    typescript: 4.9.5
-    ua-parser-js: ^1.0.33
-    vite-tsconfig-paths: ^4.0.5
-    vitest: ^0.28.4
-    wretch: ^2.4.1
-    zustand: ^4.3.3
-  languageName: unknown
-  linkType: soft
 
 "webidl-conversions@npm:^3.0.0":
   version: 3.0.1
