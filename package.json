@@ -14,12 +14,12 @@
   },
   "packageManager": "yarn@3.4.1",
   "scripts": {
-    "postinstall": "husky install && yarn run init-msw && yarn run init-partytown",
+    "postinstall": "husky install && yarn run init-msw",
     "init-msw": "msw init public/ --save",
     "init-partytown": "partytown copylib public/~partytown",
     "generate-sitemaps": "next-sitemap && prettier --write './public/sitemap*.xml'",
     "build": "NODE_OPTIONS='--no-experimental-fetch' next build && yarn run postbuild",
-    "postbuild": "yarn run init-partytown && yarn run generate-sitemaps",
+    "postbuild": "yarn run generate-sitemaps",
     "dev": "NODE_OPTIONS='--no-experimental-fetch' NEXT_MANUAL_SIG_HANDLE=true next dev",
     "start": "NODE_OPTIONS='--no-experimental-fetch' NEXT_MANUAL_SIG_HANDLE=true next start --keepAliveTimeout=22000",
     "lint": "next lint",
@@ -35,7 +35,6 @@
     "serve-storybook": "serve storybook-static"
   },
   "dependencies": {
-    "@builder.io/partytown": "^0.7.5",
     "@mantine/hooks": "^5.10.3",
     "@next/env": "^13.2.3",
     "@next/font": "13.1.6",

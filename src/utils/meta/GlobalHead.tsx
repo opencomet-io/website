@@ -1,9 +1,7 @@
 import { FC } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { Partytown } from '@builder.io/partytown/react';
 
-import vars from 'utils/vars';
 import theme from 'utils/styled/theme';
 
 const GlobalHead: FC = () => {
@@ -43,8 +41,6 @@ const GlobalHead: FC = () => {
           <meta property="og:locale:alternate" content={locale} key={`og-alt-${locale}`} />
         )
       )}
-
-      <Partytown debug={vars.DEBUG} forward={[]} />
     </Head>
   );
 };
