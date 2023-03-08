@@ -22,8 +22,8 @@ const GlobalStyle = styled.createGlobalStyle`
     font-kerning: normal;
     overflow-x: clip;
 
-    background-color: white;
-    color: black;
+    background-color: ${({ theme }) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.black};
     line-height: 1.5;
   }
 
