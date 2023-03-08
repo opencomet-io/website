@@ -16,8 +16,12 @@ const GlobalHead: FC = () => {
         content="width=device-width, initial-scale=1, minimum-scale=0.3, maximum-scale=5"
       />
       <meta name="referrer" content="same-origin" />
-      <link rel="icon" href="/favicon.ico" />
-      <link rel="shortcut icon" href="/favicon.ico" />
+
+      <link rel="icon" sizes="any" href="/icons/favicon.svg" type="image/svg+xml" />
+      <link rel="icon" sizes="32x32" href="/icons/favicon-32x32.png" type="image/png" />
+      <link rel="icon" sizes="48x48" href="/icons/favicon-48x48.png" type="image/png" />
+      <link rel="icon" sizes="96x96" href="/icons/favicon-96x96.png" type="image/png" />
+      <link rel="icon" sizes="144x144" href="/icons/favicon-144x144.png" type="image/png" />
 
       {/* PWA */}
       <meta name="application-name" content={process.env.NEXT_PUBLIC_SITE_NAME} />
