@@ -4,6 +4,7 @@ import * as S from './Layout.styles';
 
 export interface Props {
   children: ReactNode;
+  className?: string;
 }
 
 const Layout: FC<Props> = ({ children, ...props }) => {
