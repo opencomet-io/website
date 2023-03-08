@@ -1,5 +1,8 @@
 const colors = {
-  primary: '#fff',
+  primary: '#7610dc',
+  white: '#f9f9fa',
+  black: '#0e0f12',
+  grey: '#414855',
 };
 
 const zIndexes = {
